@@ -1,0 +1,267 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(images/bats.gif);
+  background-repeat: repeat;
+  background-color: black;
+  margin: 0;
+}
+
+.box-container {
+  width: 70%;
+  margin: auto;
+  border: 5px solid black;
+  box-shadow: 
+  15px 12px 17px rgba(0, 0, 0, 0.9),   /* bottom-right */
+ -15px 12px 17px rgba(0, 0, 0, 0.9);   /* bottom-left */
+ 
+
+  background-color: white;
+  min-height: 800px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+header {
+  background: radial-gradient(
+    circle at bottom left,
+    white 10%,
+    orange 35%,
+    black 105%
+  );
+
+  padding-top: 5px;
+}
+
+header h1 {
+  font-size: 38px;
+  line-height: 0.5;
+}
+
+header img {
+  float: left;
+  padding: 15px 15px;
+}
+
+header p {
+  font-size: 25px;
+}
+
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+nav ul.menu li {
+  position: relative;
+}
+
+nav ul.menu li a {
+  display: block;
+  padding: 15px 36px;
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+}
+/* Hover effect */
+nav ul.menu li a:hover {
+  background-color: gray;
+}
+
+/* Active page */
+nav ul.menu li a.active {
+  background-color: black;
+  color: orange;
+}
+
+/* Submenu formatting*/
+nav ul.submenu {
+  display: none;
+  position: absolute;
+  background-color: black;
+  list-style: none;
+  min-width: 202px;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul.submenu li a {
+  padding: 10px;
+}
+
+nav ul.menu li:hover > ul.submenu {
+  display: block;
+}
+h1:first-child {
+  margin-top: 0;
+}
+.home-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+/* Side nav bar */
+.sidenav {
+  float: left;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidenav a {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  border: 2px solid black;
+  background-color: orange;
+  padding: 7px;
+  margin: 6px;
+  width: 120px;
+  font-size: 19px;
+}
+
+.sidenav a:hover {
+  color: green;
+}
+
+/* Content area */
+.content {
+  flex-grow: 1;
+  padding-top: 12px;
+  box-sizing: border-box;
+  font-size: 17px;
+  margin-left: 20px;
+  margin-right: 50px;
+}
+.big-letter {
+  font-size: 1.8em;
+  color: black;
+}
+
+#cat_link {
+  color: orange;
+}
+#cat_link:hover {
+  color: green;
+}
+.product_content {
+  flex-grow: 1;
+  box-sizing: border-box;
+  margin-top: 22px;
+
+}
+
+.product_content h1 {
+  padding-left: 160px;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-bottom: 22px;
+}
+
+th{
+  color: rgb(71, 70, 70);
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+
+  text-align: left;    
+  vertical-align: top; 
+  font-size: 20px;
+}
+td[rowspan] {
+  font-weight: bold;
+  font-size: 17px;
+  font-size: 20px;
+}
+
+td a {
+  font-weight: bold;
+  color: black;
+}
+
+#price_bg {
+  background-color: rgb(252, 223, 169);
+}
+.Deranged_cat {
+  margin-top: 22px;
+}
+.Deranged_cat h1
+{
+  font-size: 25px;
+}
+#cat_sidenav
+{
+  margin-top: 16px;
+}
+.cat-content {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 34px;
+}
+
+#cat_img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin-top: 29px;
+}
+
+.cat-text {
+  padding-left: 20px;
+  font-size: 19px;
+}
+
+#cat_header_nav ul.menu {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.Deranged_sidebar {
+  background-color: rgb(255, 212, 132);
+  padding: 20px;
+  padding-top: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding-bottom: 33px;
+}
+.Deranged_sidebar p
+{
+  font-size: 18px;
+}
+.Deranged_sidebar_content
+{
+  padding-left: 25px;
+ 
+}
+.Deranged_sidebar_content a
+{
+  color: black;
+}
+.Deranged_sidebar_content img {
+  width: 40%;
+}
+.Deranged_sidebar a:hover {
+  color: green;
+}
+
+footer {
+  background: radial-gradient(
+    circle at top right,
+    white 10%,
+    orange 35%,
+    black 105%
+  );
+  padding-top: 5px;
+  text-align: center;
+  border-top: 2px solid black;
+  border-bottom: 1px solid black;
+}
