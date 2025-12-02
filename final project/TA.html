@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html Slang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Computer Science Department</title>
+  <link rel="icon" href="images/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section class="box-container">
+    <header>
+      <img src="images/logo.png" id="logo-img" />
+
+      <div class="header-content">
+        <h1>Computer Science Department</h1>
+        <nav>
+          <ul class="menu">
+            <li><a href="./home.html">Home</a></li>
+            <li>
+              <a href="./description.html">Program Description</a>
+            </li>
+            <li><a href="./TA.html" class="active">TA Application</a></li>
+            <li><a href="./GPA.html">GPA Calculator</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="ta_form">
+      <div class="form_content">
+        <h2>Teaching Assistant Application Form</h2>
+        <h3>Applicant information</h3>
+        <!-- Form goes here -->
+        <form action="survey_data.html" method="get" name="myform">
+          <div>
+            <label for="firstname">First name:</label>
+            <input type="text" id="firstname" name="firstname" required autofocus /><br />
+          </div>
+          <div>
+            <label for="lastname">Last name:</label>
+            <input type="text" id="lastname" name="lastname" required /><br />
+          </div>
+          <div>
+            <label for="student_id">Student ID:</label>
+            <input type="text" id="student_id" name="student_id" required /><br />
+          </div>
+          <div>
+            <label id="gender_label">Gender:</label>
+            <label for="gender" style="padding-right: 10px;">M</label>
+            <input type="checkbox" id="gender" name="gender" value="Male" required />
+
+            <label for="gender" style="padding-right: 10px;">F</label>
+            <input type="checkbox" id="gender" name="gender" value="Female" />
+
+          </div>
+          <div>
+            <label for="gpa">GPA:</label>
+            <input type="text" id="gpa" name="gpa" required /><br />
+          </div>
+          <div>
+            <label for="comments" id="comments_label">Comments:</label>
+            <input type="text" id="comments" name="comments" />
+          </div>
+
+          <h3>Thanks you for completing the application!</h3>
+          <input type="submit" name="button" id="button" value="Submit" />
+          <input type="reset" name="reset" id="reset" value="Reset" />
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-div">
+        <p>
+          7400 East Drive <br />
+          Montgomery,AL 36117<br />
+          Local:334-244-3000<br />
+          Toll-Free:800-227-2649
+        </p>
+      </div>
+      <div class="footer-div">
+        <p>&copy;2025 Venu Sri</p>
+      </div>
+      <div class="footer-image">
+        <img src="images/twt.jpeg" alt="twitter" />
+        <img src="images/pinterest-logo.png" alt="pinterest-logo" />
+        <img src="images/facebook-social-network-logo.png" alt="facebook" />
+      </div>
+    </footer>
+    </div>
+  </section>
+</body>
+
+</html>

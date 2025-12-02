@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html Slang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Science Department</title>
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section class="box-container">
+        <header>
+            <img src="images/logo.png" id="logo-img" />
+
+            <div class="header-content">
+                <h1>Computer Science Department</h1>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="./home.html">Home</a></li>
+                        <li>
+                            <a href="./description.html">Program Description</a>
+                        </li>
+                        <li><a href="./TA.html">TA Application</a></li>
+                        <li><a href="./GPA.html" class="active">GPA Calculator</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="gpa_content">
+            <div class="gpa_cal">
+                <h2>Find your GPA!</h2>
+                <p>Enter the number of credit hours for each course, and the letter grade for each of them.At least 2
+                    courses should be entered.</p>
+                <div class="gpa-row" style="margin-bottom: 12px;">
+                    <h3 id="credit_hours">Credit Hours</h3>
+                    <h3>Grade</h3>
+                </div>
+
+                <!-- Row 1 -->
+                <div class="gpa-row">
+                    <label for="course">Course 1:</label>
+                    <input type="text" name="hours1" id="hours1" />
+                    <input type="text" name="grade1" id="grade1" maxlength="1"/>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="gpa-row">
+                    <label for="course">Course 2:</label>
+                    <input type="text" name="hours2"  id="hours2"/>
+                    <input type="text" name="grade2" id="grade2"  maxlength="1"/>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="gpa-row">
+                    <label for="course">Course 3:</label>
+                    <input type="text" name="hours3" id="hours3" />
+                    <input type="text" name="grade3" id="grade3"  maxlength="1"/>
+                </div>
+
+                <!-- Row 4 -->
+                <div class="gpa-row">
+                    <label for="course">Course 4:</label>
+                    <input type="text" name="hours4" id="hours4" />
+                    <input type="text" name="grade4"  id="grade4" maxlength="1"/>
+                </div>
+
+                <!-- Row 5 -->
+                <div class="gpa-row">
+                    <label for="course">Course 5:</label>
+                    <input type="text" name="hours5" id="hours5" />
+                    <input type="text" name="grade5" id="grade5"  maxlength="1"/>
+                </div>
+                <div class="gpa-row">
+                    <label for="GPA">Avg GPA:</label>
+                    <input type="number" name="GPA" id="GPA" readonly />
+                </div>
+                <button  id="submit_gpa" onclick="calculateGPA()" >Submit</button>
+                <button id="reset_gpa" onclick="resetForm()">Reset</button>
+
+
+                <script src="gpa.js"></script>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-div">
+                <p>
+                    7400 East Drive <br />
+                    Montgomery,AL 36117<br />
+                    Local:334-244-3000<br />
+                    Toll-Free:800-227-2649
+                </p>
+            </div>
+            <div class="footer-div">
+                <p>&copy;2025 Venu Sri</p>
+            </div>
+            <div class="footer-image">
+                <img src="images/twt.jpeg" alt="twitter" />
+                <img src="images/pinterest-logo.png" alt="pinterest-logo" />
+                <img src="images/facebook-social-network-logo.png" alt="facebook" />
+            </div>
+        </footer>
+        </div>
+    </section>
+</body>
+
+</html>

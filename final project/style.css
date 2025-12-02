@@ -1,0 +1,347 @@
+body {
+  background-image: url(./styles/aum3.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: cover;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-container {
+  width: 76%;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 32px;
+  border: 3px solid black;
+  background-color: white;
+  min-height: 800px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+/*Header*/
+header {
+  display: flex;
+}
+
+#logo-img {
+  width: 120px;
+  padding: 17px;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.header-content {
+  flex: 1;
+  background: radial-gradient(circle at bottom left, white 3%, #f25d06 37%);
+
+  padding: 0;
+  margin: 0;
+}
+
+.header-content h1 {
+  padding-left: 60px;
+  margin-bottom: 48px;
+  font-size: 32px;
+}
+
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul.menu li {
+  position: relative;
+}
+
+nav ul.menu li a {
+  display: block;
+  padding: 19px 36px;
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+/* Hover effect */
+nav ul.menu li a:hover {
+  background-color: gray;
+  color: black;
+}
+
+/* Active page */
+nav ul.menu li a.active {
+  background-color: black;
+  color: #f25d06;
+}
+/*Home page css*/
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 10px;
+  background-color: #d3d3d3d0;
+  padding: 0px;
+  padding-bottom: 80px;
+  padding-top: 20px;
+}
+
+.home-content-left,
+.home-content-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.organe_line {
+  border-right: 3px solid #fb813a;
+  height: 495px;
+}
+
+.home-content-left div,
+.home-content-right div {
+  display: block;
+  flex-direction: column;
+  border-top: 3px solid rgb(172, 169, 169);
+  margin-bottom: 0px;
+}
+.home-content-left div {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.home-content-right div {
+  padding-right: 20px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.home-content h2 {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.home-content p {
+  margin-top: 10px;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 0px;
+  font-size: 17px;
+}
+
+#student_clubs {
+  margin-top: 15px;
+  padding-bottom: 39px;
+  border-bottom: 3px solid rgb(172, 169, 169);
+}
+#research_interns {
+  border-bottom: 3px solid rgb(172, 169, 169);
+  padding-bottom: 13px;
+}
+/*Describe page css*/
+
+.organe_line_decription {
+  border-right: 3px solid #fb813a;
+  height: 870px;
+}
+.degree_work {
+  line-height: 1.5em;
+}
+.points {
+  line-height: 1.5em;
+}
+.points h2 {
+  padding-left: 10px;
+}
+.points ul {
+  border-bottom: 3px solid rgb(172, 169, 169);
+  padding-left: 10px;
+}
+
+.points li {
+  padding-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: disc inside;
+  line-height: 1.5em;
+}
+#employment_p {
+  margin-top: 18px;
+}
+
+table {
+  width: 101%;
+  height: 40%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 2px solid #858585;
+}
+
+th {
+  border: 2px solid #4c4c4c;
+  background-color: rgb(55, 54, 54, 0.564);
+  font-weight: normal;
+}
+td {
+  background-color: rgb(180, 178, 178);
+  border: 2px solid #4c4c4c;
+  padding: 7px;
+  text-align: center;
+}
+.information {
+  margin-top: 15px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgb(199, 199, 199);
+}
+.home-content {
+  padding-bottom: 17px;
+}
+/*form css*/
+.ta_form {
+  background-color: #d3d3d3d0;
+  padding: 40px 0;
+}
+
+.form_content {
+  width: 60%;
+  border: 3px solid #ababab;
+  border-left: 3px solid #fb813a;
+  border-right: 3px solid #fb813a;
+  padding: 30px;
+  padding-top: 0px;
+  margin-left: 18%;
+  margin-top: -10px;
+}
+.form_content h2 {
+  font-size: 28px;
+}
+.form_content h3 {
+  font-size: 22px;
+}
+label {
+  font-size: 17px;
+  padding-right: 20px;
+}
+#gender_label {
+  padding-right: 40px;
+}
+.form_content div {
+  margin-bottom: 15px;
+}
+
+input {
+  font-size: inherit;
+  padding: 0.2em;
+  margin-bottom: 0.5em;
+  border-radius: 1px;
+  border: 2px solid hsl(0, 0%, 71%);
+}
+#gpa {
+  margin-left: 45px;
+  width: 60px;
+}
+#comments_label {
+  vertical-align: top;
+  padding-right: 14px;
+}
+
+#comments {
+  width: 30%;
+  height: 80px;
+}
+#button,
+#reset {
+  padding: 12px;
+  padding-inline: 35px;
+  margin-inline: 20px;
+  margin-left: 40px;
+  border: 2px solid hsl(0, 0%, 71%);
+  background-color: rgb(239, 237, 237);
+}
+/*gpa cal*/
+.gpa_content {
+  background-color: #d3d3d3d0;
+  padding: 40px 20px;
+}
+.gpa_cal {
+  border: 3px solid #ababab;
+  border-left: 3px solid #fb813a;
+  border-right: 3px solid #fb813a;
+  margin: 20px;
+  margin-top: -10px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+.gpa_cal h2 {
+  text-align: center;
+  font-size: 28px;
+}
+.gpa_cal p {
+  font-size: 15.5px;
+}
+.gpa-row {
+  display: flex;
+  gap: 120px;
+  margin-bottom: 25px;
+  margin-left: 12%;
+}
+.gpa-row h3 {
+  font-size: 23px;
+  margin-bottom: 0px;
+}
+#credit_hours {
+  margin-left: 25%;
+  margin-right: -3%;
+}
+.gpa-row label {
+  font-size: 19px;
+}
+.gpa-row input {
+  padding: 3px;
+  width: 86px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+#GPA {
+  background-color: gray;
+  border-top: 2px solid rgb(39, 39, 39);
+  border-left: 2px solid rgb(39, 39, 39);
+  border-right: 2px solid #a9a9a9;
+  border-bottom: 2px solid #a9a9a9;
+}
+#submit_gpa {
+  margin-left: 37%;
+  margin-right: 11%;
+}
+#submit_gpa,
+#reset_gpa {
+  width: 110px;
+  padding: 10px;
+  padding-inline: 22px;
+  border: 2px solid hsl(0, 0%, 71%);
+  background-color: rgb(239, 237, 237);
+  font-size: 17px;
+}
+/*Footer*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 3px solid black;
+  background: #f25d06;
+  padding: 20px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.footer-div {
+  flex: 1;
+}
+.footer-div p {
+  font-size: 14px;
+}
+.footer-image img {
+  width: 30px;
+  height: 30px;
+  margin: 10px 2px;
+  vertical-align: middle;
+}
